@@ -4,14 +4,14 @@
 {% block title %}Home{% endblock title %}
 
 {% block content %}
-<h1>Home</h1>
+<h1><i class="bi bi-house"></i> Home</h1>
 <img class="detailimg" src="{% static 'images/sfu.jpeg' %}">
 {% if user.is_authenticated %}
 	<h3>Hi {{ user.username }}!</h3>
-	<p><a href="{% url 'logout' %}">Log Out</a></p>
+	<p><a href="{% url 'account_logout' %}">Log Out</a></p>
 {% else %}
 	<h3>Hi guess!</h3>
-	<a href="{% url 'login' %}">Log In</a>
-	<a href="{% url 'signup' %}">Sign Up</a>
+	<a href="{% url 'account_login' %}">Log In</a>
+	<a href="{% url 'account_signup' %}">Sign Up</a>
 {% endif %}
 {% endblock content %}

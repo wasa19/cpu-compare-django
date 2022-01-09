@@ -6,3 +6,15 @@ h1 {
 	height: 300px;
 	width: auto;
 }
+
+.main {
+	display: flex;
+}
+
+.sidebar {
+	background-color: lightgrey;
+	border: gray solid 1px;
+	width: 20%;
+	min-height: 400px;
+	padding-left: 20px;
+}
